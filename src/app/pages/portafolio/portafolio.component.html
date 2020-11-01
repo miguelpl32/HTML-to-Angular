@@ -48,7 +48,7 @@
   >
     <a
       *ngFor="let producto of productosService.productos"
-      routerLink="/item"
+      routerLink="/item/{{ producto.cod }}"
       class="rk-item ae-masonry__item"
     >
       <img src="assets/productos/{{ producto.url }}.jpg" alt="" />
