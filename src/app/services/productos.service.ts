@@ -15,7 +15,7 @@ export class ProductosService {
     this.cargarProductos();
   }
 
-  private cargarProductos() {
+  private cargarProductos(): any {
 
     return new Promise((resolve, reject) => {
 
@@ -35,7 +35,7 @@ export class ProductosService {
     return this.http.get(`https://angular-html-5f5be.firebaseio.com/productos/${id}.json`);
   }
 
-  buscarProducto(termino: string) {
+  buscarProducto(termino: string): any {
     if (this.productos.length === 0) {
       this.cargarProductos().then(() => {
 
@@ -48,7 +48,7 @@ export class ProductosService {
 
   }
 
-  private filtrarProductos(termino: string) {
+  private filtrarProductos(termino: string): any {
     this.productosFiltrado = [];
     termino = termino.toLowerCase();
 
@@ -59,6 +59,6 @@ export class ProductosService {
         this.productosFiltrado.push(prod);
       }
 
-    })
+    });
   }
 }
