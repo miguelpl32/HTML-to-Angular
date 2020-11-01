@@ -4,7 +4,8 @@ Proyecto realizado en  [Angular CLI](https://github.com/angular/angular-cli) ver
 
 ## Objetivo
 
-+ Se ha cargado una plantilla HTML y se ha modificado con Angular
++ Cargar una plantilla HTML y convertirla en Angular.
++ Conexion con Firebase.
 
 ## Visita el Proyecto
 
